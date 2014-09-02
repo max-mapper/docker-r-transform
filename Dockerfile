@@ -1,5 +1,3 @@
-from chilijung/docker-r
+from eddelbuettel/docker-ubuntu-r
 
-add . /home/ubuntu/
-
-entrypoint ["./transform.r"]
+entrypoint ["pwd"]
