@@ -1,6 +1,5 @@
 from chilijung/docker-r
 
-workdir /root
-onbuild add . /root/
+add . /home/ubuntu/
 
 entrypoint ["./transform.r"]
