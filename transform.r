@@ -4,15 +4,6 @@
 # write one json object per line to stdin
 # this writes one json object per line to stdout
 
-## set default repo
-local({r <- getOption("repos");
-r["CRAN"] <- "http://cran.r-project.org"; options(repos=r)})
-  
-if (!require("RJSONIO")) {
-  install.packages("RJSONIO")
-  library("RJSONIO")
-}
-
 # change this function to modify each R list object as it gets processed
 transform <- function(obj) {
   obj["hello_from"] = "R"
