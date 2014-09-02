@@ -4,6 +4,8 @@
 # write one json object per line to stdin
 # this writes one json object per line to stdout
 
+require("RJSONIO")
+
 # change this function to modify each R list object as it gets processed
 transform <- function(obj) {
   obj["hello_from"] = "R"
