@@ -17,6 +17,6 @@ The Dockerfile handles installing R dependencies, and setting the entrypoint.
 You can run this as a unix pipe like this:
 
 ```
-$ echo '{"foo": "bar"}' | docker-stream maxogden/docker-r-transform
+$ echo '{"foo": "bar"}' | docker run -i maxogden/docker-r-transform
 { "foo": "bar","hello_from": "R" }
 ```
